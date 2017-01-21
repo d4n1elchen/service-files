@@ -1,0 +1,10 @@
+[Unit]
+Description=Start a node app at boot
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/web.ccns.ncku.edu.tw/CCNS-HomePage/ExpressServer
+ExecStart=/usr/bin/node /var/www/web.ccns.ncku.edu.tw/CCNS-HomePage/ExpressServer/server.js
+
+[Install]
+WantedBy=multi-user.target
